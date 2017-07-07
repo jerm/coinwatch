@@ -22,6 +22,24 @@ Fill-in your coin symbols and owned amounts.
 # Usage
 
 $ python coinwatch.py
+```javascript
+{
+    "BTC": {
+        "price": 2597.87,
+        "value": 264.98274,
+        "volume": 0.102
+    },
+    "DOGE": {
+        "price": 0.002573,
+        "value": 25.665675,
+        "volume": 9975.0
+    },
+ 
+    "totalvalue": 290.648415
+}
+// (Where volume is how much you own as defined in coinwatch.ini)
+```
+ 
 
 $ zappa deploy 
 
