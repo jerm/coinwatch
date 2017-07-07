@@ -22,5 +22,6 @@ Fill-in your coin symbols and owned amounts.
 # Usage
 
 $ python coinwatch.py
+
 $ zappa deploy 
 
