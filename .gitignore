@@ -1,0 +1,6 @@
+*.ini
+.env
+*.pyc
+*.swp
+*.log
+zappa_settings.json

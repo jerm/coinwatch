@@ -1,0 +1,10 @@
+{
+    "coinwatch": {
+        "s3_bucket": "mything-coinwatch",
+        "keep_warm": false,
+        "events": [{
+            "function": "coinwatch.collect", // The function to execute
+            "expression": "rate(1 minute)" // When to execute it (in cron or rate format)
+        }]
+    }
+}

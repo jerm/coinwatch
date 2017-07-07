@@ -1,0 +1,19 @@
+[general]
+logfile: coinwatch.log
+use_datadog: True
+
+[datadog]
+dd_api_key: ddapikeyddapikeyddapikey
+dd_app_key: ddappkeyddappkeyddappkey
+stat_prefix: coins
+
+;[healthcheck]
+;url: https://hchk.io/74ddddd-8ddd-4ddd-8ddd-ddddddddddce
+
+; Coin symbol and amout of coin that you own.
+
+[coins]
+LTC: 22.891
+DOGE: 10.2
+BTC: 103.512312
+
