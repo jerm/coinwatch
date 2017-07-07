@@ -1,6 +1,8 @@
 # Description
 Script to collect and report a list of cryptocurrency values and (optionally) send the data to datadog for history and graphing and alerting
 
+Bonus [Zappa](https://github.com/Miserlou/Zappa) config for deploying to AWS Lambda if you don't wanna run/cron it yourself
+
 # Datadog
 I chose datadog because it has a great stat visualizing interface, can do alerting, and is free. 
 Set up an account, an api and app key, put the values into the ini file, and datadog will graph things for you
@@ -21,6 +23,7 @@ Fill-in your coin symbols and owned amounts.
 
 # Usage
 
+## Manual run
 $ python coinwatch.py
 ```javascript
 {
@@ -40,6 +43,6 @@ $ python coinwatch.py
 // (Where volume is how much you own as defined in coinwatch.ini)
 ```
  
-
+## deploy to AWS lamba
 $ zappa deploy 
 
