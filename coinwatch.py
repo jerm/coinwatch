@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """ Coinwatch - get and do stuff with cryptocoin price data """
 
-import ConfigParser
+import configparser
 import json
 import logging
 import pprint
@@ -23,7 +23,7 @@ ch.setFormatter(formatter)
 ch.setLevel(logging.INFO)
 log.addHandler(ch)
 
-Config = ConfigParser.ConfigParser()
+Config = configparser.ConfigParser()
 Config.read("coinwatch.ini")
 
 COINS_CONFIG = Config.items("coins")
@@ -124,4 +124,4 @@ if __name__ == '__main__':
     fh.setFormatter(formatter)
     log.addHandler(fh)
 
-    print json.dumps(collect(), sort_keys=True, indent=4)
+    print(json.dumps(collect(), sort_keys=True, indent=4))
